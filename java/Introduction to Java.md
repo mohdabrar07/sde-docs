@@ -154,47 +154,57 @@ A basic Java program usually contains:
 - **Main method** (`public static void main(String[] args)`)  
 - **Statements** inside the method  
 
-Example (no need to execute yet):
-
-```java
+### Example (no need to execute yet):
 class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, Java!");
-    }
+public static void main(String[] args) {
+System.out.println("Hello, Java!");
 }
-Don’t worry — we’ll learn this line by line later.
-Just remember: every Java program starts from the main() method.
+}
 
-🔟 Advantages of Java
-✅ Platform Independent — Runs on any OS
-✅ Object-Oriented — Promotes reusability and structure
-✅ Secure — No manual memory access
-✅ Stable & Mature — Used for over two decades
-✅ Large Community Support — Millions of developers
-✅ Rich API & Libraries — Prebuilt classes for almost everything
-✅ Performance — Faster than many interpreted languages
-✅ Backbone of Android Development
+text
 
-1️⃣1️⃣ Real-World Applications of Java
-Application Type	Examples
-Desktop Applications	Eclipse, IntelliJ IDEA, NetBeans
-Web Applications	LinkedIn, Amazon, Flipkart (server-side Java)
-Mobile Applications	Android apps
-Enterprise Software	Banking systems, ERP tools
-Cloud-based Applications	AWS, Google Cloud backend services
-Big Data Tools	Hadoop, Apache Spark
-Game Development	Minecraft (built in Java)
+Don’t worry — each part will be explained line by line soon.  
+Just remember: every Java program starts from the `main()` method.
 
-1️⃣2️⃣ Summary
+---
+
+## 🔟 Advantages of Java
+
+- ✅ Platform Independent — Runs on any OS  
+- ✅ Object-Oriented — Promotes reusability and structure  
+- ✅ Secure — No manual memory access  
+- ✅ Stable & Mature — Used for over two decades  
+- ✅ Large Community Support — Millions of developers  
+- ✅ Rich API & Libraries — Prebuilt classes for almost everything  
+- ✅ Performance — Faster than many interpreted languages  
+- ✅ Backbone of Android Development  
+
+---
+
+## 1️⃣1️⃣ Real-World Applications of Java
+
+| Application Type        | Examples                                              |
+|------------------------|------------------------------------------------------|
+| Desktop Applications   | Eclipse, IntelliJ IDEA, NetBeans                     |
+| Web Applications       | LinkedIn, Amazon, Flipkart (server-side Java)        |
+| Mobile Applications    | Android apps                                         |
+| Enterprise Software    | Banking systems, ERP tools                           |
+| Cloud-based Applications | AWS, Google Cloud backend services                    |
+| Big Data Tools         | Hadoop, Apache Spark                                 |
+| Game Development       | Minecraft (built in Java)                            |
+
+---
+
+## 1️⃣2️⃣ Summary
+
 Java is a powerful, object-oriented, and cross-platform language.
 
 It was developed by James Gosling at Sun Microsystems.
 
-Its key principle: Write Once, Run Anywhere (WORA).
+Its key principle: **Write Once, Run Anywhere (WORA)**.
 
 Java applications are compiled into bytecode and run by the JVM.
 
-You’ll use JDK for development, JRE for running, and JVM for executing.
+For development, use **JDK**; for running programs, use **JRE**; for execution, the **JVM**.
 
 Java powers everything from mobile apps to enterprise systems.
-
