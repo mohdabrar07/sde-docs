@@ -1,0 +1,977 @@
+# Conditional Statements in Java - A Beginner's Guide
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [What are Conditional Statements?](#what-are-conditional-statements)
+3. [Types of Conditional Statements](#types-of-conditional-statements)
+4. [If Statement](#if-statement)
+5. [If-Else Statement](#if-else-statement)
+6. [If-Else-If Ladder](#if-else-if-ladder)
+7. [Nested If Statements](#nested-if-statements)
+8. [Switch Statement](#switch-statement)
+9. [Ternary Operator](#ternary-operator)
+10. [Common Mistakes to Avoid](#common-mistakes-to-avoid)
+11. [Practice Exercises](#practice-exercises)
+
+---
+
+## Introduction
+
+Welcome to this comprehensive guide on conditional statements in Java! This tutorial is designed for absolute beginners who want to understand how to make decisions in their Java programs.
+
+---
+
+## What are Conditional Statements?
+
+Conditional statements are like decision-making tools in programming. Just like in real life, where you make decisions based on certain conditions (e.g., "If it's raining, I'll take an umbrella"), in programming, we use conditional statements to execute different code based on whether certain conditions are true or false.
+
+**Real-life analogy:**
+- **If** you're hungry, **then** eat food
+- **If** the traffic light is red, **then** stop, **else** go
+- **If** it's hot outside, wear shorts, **else if** it's cold, wear a jacket, **else** wear regular clothes
+
+---
+
+## Types of Conditional Statements
+
+Java provides several types of conditional statements:
+
+1. **if statement** - Execute code if a condition is true
+2. **if-else statement** - Execute one block if true, another if false
+3. **if-else-if ladder** - Check multiple conditions
+4. **nested if** - If statements inside other if statements
+5. **switch statement** - Choose between multiple options
+6. **ternary operator** - Shorthand for simple if-else
+
+---
+
+## If Statement
+
+The `if` statement is the simplest conditional statement. It executes a block of code only if the specified condition is `true`.
+
+### Syntax
+```java
+if (condition) {
+    // Code to execute if condition is true
+}
+```
+
+### Example 1: Basic If Statement
+```java
+public class IfExample {
+    public static void main(String[] args) {
+        int age = 18;
+        
+        if (age >= 18) {
+            System.out.println("You are eligible to vote!");
+        }
+    }
+}
+```
+
+**Output:**
+```
+You are eligible to vote!
+```
+
+### Example 2: If Statement with Multiple Conditions
+```java
+public class IfMultipleConditions {
+    public static void main(String[] args) {
+        int temperature = 30;
+        boolean isSunny = true;
+        
+        if (temperature > 25 && isSunny) {
+            System.out.println("It's a great day for swimming!");
+        }
+    }
+}
+```
+
+**Output:**
+```
+It's a great day for swimming!
+```
+
+### Key Points:
+- The condition must be a boolean expression (evaluates to `true` or `false`)
+- If the condition is `false`, the code inside the if block is skipped
+- You can use comparison operators: `>`, `<`, `>=`, `<=`, `==`, `!=`
+- You can use logical operators: `&&` (AND), `||` (OR), `!` (NOT)
+
+---
+
+## If-Else Statement
+
+The `if-else` statement allows you to execute one block of code if the condition is true, and a different block if it's false.
+
+### Syntax
+```java
+if (condition) {
+    // Code to execute if condition is true
+} else {
+    // Code to execute if condition is false
+}
+```
+
+### Example 1: Basic If-Else
+```java
+public class IfElseExample {
+    public static void main(String[] args) {
+        int marks = 65;
+        
+        if (marks >= 50) {
+            System.out.println("You passed the exam!");
+        } else {
+            System.out.println("You failed the exam. Better luck next time!");
+        }
+    }
+}
+```
+
+**Output:**
+```
+You passed the exam!
+```
+
+### Example 2: Even or Odd Number
+```java
+public class EvenOddChecker {
+    public static void main(String[] args) {
+        int number = 7;
+        
+        if (number % 2 == 0) {
+            System.out.println(number + " is an even number");
+        } else {
+            System.out.println(number + " is an odd number");
+        }
+    }
+}
+```
+
+**Output:**
+```
+7 is an odd number
+```
+
+### Example 3: Age Category
+```java
+public class AgeCategory {
+    public static void main(String[] args) {
+        int age = 15;
+        
+        if (age >= 18) {
+            System.out.println("You are an adult");
+        } else {
+            System.out.println("You are a minor");
+        }
+    }
+}
+```
+
+**Output:**
+```
+You are a minor
+```
+
+---
+
+## If-Else-If Ladder
+
+When you have multiple conditions to check, you can use the `if-else-if` ladder. It checks conditions from top to bottom and executes the first block where the condition is true.
+
+### Syntax
+```java
+if (condition1) {
+    // Code for condition1
+} else if (condition2) {
+    // Code for condition2
+} else if (condition3) {
+    // Code for condition3
+} else {
+    // Code if none of the above conditions are true
+}
+```
+
+### Example 1: Grade Calculator
+```java
+public class GradeCalculator {
+    public static void main(String[] args) {
+        int marks = 75;
+        
+        if (marks >= 90) {
+            System.out.println("Grade: A+");
+        } else if (marks >= 80) {
+            System.out.println("Grade: A");
+        } else if (marks >= 70) {
+            System.out.println("Grade: B");
+        } else if (marks >= 60) {
+            System.out.println("Grade: C");
+        } else if (marks >= 50) {
+            System.out.println("Grade: D");
+        } else {
+            System.out.println("Grade: F (Failed)");
+        }
+    }
+}
+```
+
+**Output:**
+```
+Grade: B
+```
+
+### Example 2: Weather Recommendation
+```java
+public class WeatherAdvice {
+    public static void main(String[] args) {
+        int temperature = 35;
+        
+        if (temperature > 35) {
+            System.out.println("It's extremely hot! Stay indoors.");
+        } else if (temperature > 25) {
+            System.out.println("It's warm. Perfect for outdoor activities!");
+        } else if (temperature > 15) {
+            System.out.println("It's cool. Wear a light jacket.");
+        } else if (temperature > 5) {
+            System.out.println("It's cold. Wear warm clothes.");
+        } else {
+            System.out.println("It's freezing! Bundle up!");
+        }
+    }
+}
+```
+
+**Output:**
+```
+It's warm. Perfect for outdoor activities!
+```
+
+### Example 3: Day of Week
+```java
+public class DayOfWeek {
+    public static void main(String[] args) {
+        int day = 3;
+        
+        if (day == 1) {
+            System.out.println("Monday");
+        } else if (day == 2) {
+            System.out.println("Tuesday");
+        } else if (day == 3) {
+            System.out.println("Wednesday");
+        } else if (day == 4) {
+            System.out.println("Thursday");
+        } else if (day == 5) {
+            System.out.println("Friday");
+        } else if (day == 6) {
+            System.out.println("Saturday");
+        } else if (day == 7) {
+            System.out.println("Sunday");
+        } else {
+            System.out.println("Invalid day number");
+        }
+    }
+}
+```
+
+**Output:**
+```
+Wednesday
+```
+
+---
+
+## Nested If Statements
+
+Nested if statements are if statements inside other if statements. They're useful when you need to check additional conditions after an initial condition is met.
+
+### Syntax
+```java
+if (condition1) {
+    if (condition2) {
+        // Code executed when both condition1 and condition2 are true
+    }
+}
+```
+
+### Example 1: Eligibility Checker
+```java
+public class EligibilityChecker {
+    public static void main(String[] args) {
+        int age = 20;
+        boolean hasLicense = true;
+        
+        if (age >= 18) {
+            System.out.println("You are old enough to drive");
+            
+            if (hasLicense) {
+                System.out.println("You can drive a car!");
+            } else {
+                System.out.println("But you need a license first");
+            }
+        } else {
+            System.out.println("You are too young to drive");
+        }
+    }
+}
+```
+
+**Output:**
+```
+You are old enough to drive
+You can drive a car!
+```
+
+### Example 2: Discount Calculator
+```java
+public class DiscountCalculator {
+    public static void main(String[] args) {
+        double totalAmount = 5000;
+        boolean isMember = true;
+        
+        if (totalAmount > 1000) {
+            System.out.println("You qualify for a discount!");
+            
+            if (isMember) {
+                double discount = totalAmount * 0.20; // 20% discount
+                System.out.println("Member discount: Rs." + discount);
+                System.out.println("Final amount: Rs." + (totalAmount - discount));
+            } else {
+                double discount = totalAmount * 0.10; // 10% discount
+                System.out.println("Regular discount: Rs." + discount);
+                System.out.println("Final amount: Rs." + (totalAmount - discount));
+            }
+        } else {
+            System.out.println("No discount available");
+            System.out.println("Final amount: Rs." + totalAmount);
+        }
+    }
+}
+```
+
+**Output:**
+```
+You qualify for a discount!
+Member discount: Rs.1000.0
+Final amount: Rs.4000.0
+```
+
+### Example 3: Login System
+```java
+public class LoginSystem {
+    public static void main(String[] args) {
+        String username = "admin";
+        String password = "pass123";
+        boolean isAccountActive = true;
+        
+        if (username.equals("admin")) {
+            if (password.equals("pass123")) {
+                if (isAccountActive) {
+                    System.out.println("Login successful! Welcome!");
+                } else {
+                    System.out.println("Account is deactivated");
+                }
+            } else {
+                System.out.println("Incorrect password");
+            }
+        } else {
+            System.out.println("Username not found");
+        }
+    }
+}
+```
+
+**Output:**
+```
+Login successful! Welcome!
+```
+
+---
+
+## Switch Statement
+
+The `switch` statement is an alternative to the if-else-if ladder when you're comparing a single variable against multiple values. It's cleaner and more readable for such cases.
+
+### Syntax
+```java
+switch (variable) {
+    case value1:
+        // Code for value1
+        break;
+    case value2:
+        // Code for value2
+        break;
+    case value3:
+        // Code for value3
+        break;
+    default:
+        // Code if no case matches
+}
+```
+
+### Example 1: Day of Week (Using Switch)
+```java
+public class DayOfWeekSwitch {
+    public static void main(String[] args) {
+        int day = 4;
+        
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day");
+        }
+    }
+}
+```
+
+**Output:**
+```
+Thursday
+```
+
+### Example 2: Simple Calculator
+```java
+public class SimpleCalculator {
+    public static void main(String[] args) {
+        int num1 = 10;
+        int num2 = 5;
+        char operator = '*';
+        
+        switch (operator) {
+            case '+':
+                System.out.println("Result: " + (num1 + num2));
+                break;
+            case '-':
+                System.out.println("Result: " + (num1 - num2));
+                break;
+            case '*':
+                System.out.println("Result: " + (num1 * num2));
+                break;
+            case '/':
+                System.out.println("Result: " + (num1 / num2));
+                break;
+            default:
+                System.out.println("Invalid operator");
+        }
+    }
+}
+```
+
+**Output:**
+```
+Result: 50
+```
+
+### Example 3: Month Name
+```java
+public class MonthName {
+    public static void main(String[] args) {
+        int month = 12;
+        
+        switch (month) {
+            case 1:
+                System.out.println("January");
+                break;
+            case 2:
+                System.out.println("February");
+                break;
+            case 3:
+                System.out.println("March");
+                break;
+            case 4:
+                System.out.println("April");
+                break;
+            case 5:
+                System.out.println("May");
+                break;
+            case 6:
+                System.out.println("June");
+                break;
+            case 7:
+                System.out.println("July");
+                break;
+            case 8:
+                System.out.println("August");
+                break;
+            case 9:
+                System.out.println("September");
+                break;
+            case 10:
+                System.out.println("October");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("Invalid month number");
+        }
+    }
+}
+```
+
+**Output:**
+```
+December
+```
+
+### Example 4: Vowel or Consonant
+```java
+public class VowelChecker {
+    public static void main(String[] args) {
+        char letter = 'e';
+        
+        switch (letter) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                System.out.println(letter + " is a vowel");
+                break;
+            default:
+                System.out.println(letter + " is a consonant");
+        }
+    }
+}
+```
+
+**Output:**
+```
+e is a vowel
+```
+
+### Important Notes about Switch:
+- Always use `break` to exit a case (otherwise it will "fall through" to the next case)
+- The `default` case is optional but recommended
+- Switch works with: int, byte, short, char, String, and enum types
+- You cannot use switch with long, float, double, or boolean
+
+---
+
+## Ternary Operator
+
+The ternary operator is a shorthand way of writing simple if-else statements. It's called "ternary" because it has three parts.
+
+### Syntax
+```java
+variable = (condition) ? valueIfTrue : valueIfFalse;
+```
+
+### Example 1: Find Maximum
+```java
+public class TernaryExample {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        
+        int max = (a > b) ? a : b;
+        System.out.println("Maximum value: " + max);
+    }
+}
+```
+
+**Output:**
+```
+Maximum value: 20
+```
+
+### Example 2: Even or Odd
+```java
+public class EvenOddTernary {
+    public static void main(String[] args) {
+        int number = 15;
+        
+        String result = (number % 2 == 0) ? "Even" : "Odd";
+        System.out.println(number + " is " + result);
+    }
+}
+```
+
+**Output:**
+```
+15 is Odd
+```
+
+### Example 3: Pass or Fail
+```java
+public class PassFailTernary {
+    public static void main(String[] args) {
+        int marks = 45;
+        
+        String result = (marks >= 50) ? "Pass" : "Fail";
+        System.out.println("Result: " + result);
+    }
+}
+```
+
+**Output:**
+```
+Result: Fail
+```
+
+### Example 4: Nested Ternary (Find Largest of Three)
+```java
+public class LargestOfThree {
+    public static void main(String[] args) {
+        int a = 25;
+        int b = 30;
+        int c = 20;
+        
+        int largest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+        System.out.println("Largest number: " + largest);
+    }
+}
+```
+
+**Output:**
+```
+Largest number: 30
+```
+
+**Note:** While nested ternary operators work, they can become difficult to read. Use them sparingly and prefer regular if-else for complex conditions.
+
+---
+
+## Common Mistakes to Avoid
+
+### 1. Using = instead of ==
+```java
+// WRONG
+int age = 18;
+if (age = 18) {  // This is assignment, not comparison!
+    System.out.println("Adult");
+}
+
+// CORRECT
+if (age == 18) {  // This is comparison
+    System.out.println("Adult");
+}
+```
+
+### 2. Forgetting Braces
+```java
+// RISKY (works but not recommended)
+if (age >= 18)
+    System.out.println("Adult");
+    System.out.println("Can vote");  // This always executes!
+
+// BETTER
+if (age >= 18) {
+    System.out.println("Adult");
+    System.out.println("Can vote");
+}
+```
+
+### 3. Forgetting Break in Switch
+```java
+// WRONG
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        // No break! Will fall through
+    case 2:
+        System.out.println("Tuesday");
+        break;
+}
+
+// CORRECT
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+}
+```
+
+### 4. Incorrect Use of Logical Operators
+```java
+// WRONG
+int age = 20;
+if (age >= 18 && <= 60) {  // Syntax error!
+    System.out.println("Working age");
+}
+
+// CORRECT
+if (age >= 18 && age <= 60) {
+    System.out.println("Working age");
+}
+```
+
+### 5. Comparing Strings with ==
+```java
+// WRONG
+String name = "John";
+if (name == "John") {  // Compares references, not values!
+    System.out.println("Hello John");
+}
+
+// CORRECT
+if (name.equals("John")) {  // Compares actual values
+    System.out.println("Hello John");
+}
+```
+
+---
+
+## Practice Exercises
+
+Try these exercises to strengthen your understanding:
+
+### Exercise 1: Positive, Negative, or Zero
+Write a program that checks if a number is positive, negative, or zero.
+
+```java
+public class NumberChecker {
+    public static void main(String[] args) {
+        int number = -5;
+        
+        // Your code here
+    }
+}
+```
+
+### Exercise 2: Leap Year Checker
+Write a program to check if a year is a leap year. A leap year is:
+- Divisible by 4
+- If divisible by 100, it must also be divisible by 400
+
+```java
+public class LeapYearChecker {
+    public static void main(String[] args) {
+        int year = 2024;
+        
+        // Your code here
+    }
+}
+```
+
+### Exercise 3: Simple Menu System
+Create a simple menu system using switch statement:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+
+```java
+public class MenuSystem {
+    public static void main(String[] args) {
+        int choice = 3;
+        int num1 = 20;
+        int num2 = 5;
+        
+        // Your code here
+    }
+}
+```
+
+### Exercise 4: Grade System with Multiple Criteria
+Write a program that assigns grades based on marks and attendance:
+- Marks >= 90 and Attendance >= 75: Grade A
+- Marks >= 75 and Attendance >= 75: Grade B
+- Marks >= 60 and Attendance >= 75: Grade C
+- Otherwise: Grade F
+
+```java
+public class GradeSystem {
+    public static void main(String[] args) {
+        int marks = 85;
+        int attendance = 80;
+        
+        // Your code here
+    }
+}
+```
+
+### Exercise 5: Triangle Type Identifier
+Write a program that identifies if a triangle is equilateral (all sides equal), isosceles (two sides equal), or scalene (no sides equal).
+
+```java
+public class TriangleType {
+    public static void main(String[] args) {
+        int side1 = 5;
+        int side2 = 5;
+        int side3 = 7;
+        
+        // Your code here
+    }
+}
+```
+
+---
+
+## Solutions to Practice Exercises
+
+### Solution 1: Positive, Negative, or Zero
+```java
+public class NumberChecker {
+    public static void main(String[] args) {
+        int number = -5;
+        
+        if (number > 0) {
+            System.out.println(number + " is positive");
+        } else if (number < 0) {
+            System.out.println(number + " is negative");
+        } else {
+            System.out.println("The number is zero");
+        }
+    }
+}
+```
+
+### Solution 2: Leap Year Checker
+```java
+public class LeapYearChecker {
+    public static void main(String[] args) {
+        int year = 2024;
+        
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println(year + " is a leap year");
+        } else {
+            System.out.println(year + " is not a leap year");
+        }
+    }
+}
+```
+
+### Solution 3: Simple Menu System
+```java
+public class MenuSystem {
+    public static void main(String[] args) {
+        int choice = 3;
+        int num1 = 20;
+        int num2 = 5;
+        
+        System.out.println("Menu:");
+        System.out.println("1. Add");
+        System.out.println("2. Subtract");
+        System.out.println("3. Multiply");
+        System.out.println("4. Divide");
+        System.out.println("5. Exit");
+        System.out.println("\nYou selected option " + choice);
+        
+        switch (choice) {
+            case 1:
+                System.out.println("Result: " + (num1 + num2));
+                break;
+            case 2:
+                System.out.println("Result: " + (num1 - num2));
+                break;
+            case 3:
+                System.out.println("Result: " + (num1 * num2));
+                break;
+            case 4:
+                if (num2 != 0) {
+                    System.out.println("Result: " + (num1 / num2));
+                } else {
+                    System.out.println("Cannot divide by zero");
+                }
+                break;
+            case 5:
+                System.out.println("Exiting...");
+                break;
+            default:
+                System.out.println("Invalid choice");
+        }
+    }
+}
+```
+
+### Solution 4: Grade System with Multiple Criteria
+```java
+public class GradeSystem {
+    public static void main(String[] args) {
+        int marks = 85;
+        int attendance = 80;
+        
+        if (attendance >= 75) {
+            if (marks >= 90) {
+                System.out.println("Grade: A");
+            } else if (marks >= 75) {
+                System.out.println("Grade: B");
+            } else if (marks >= 60) {
+                System.out.println("Grade: C");
+            } else {
+                System.out.println("Grade: F");
+            }
+        } else {
+            System.out.println("Grade: F (Low attendance)");
+        }
+    }
+}
+```
+
+### Solution 5: Triangle Type Identifier
+```java
+public class TriangleType {
+    public static void main(String[] args) {
+        int side1 = 5;
+        int side2 = 5;
+        int side3 = 7;
+        
+        if (side1 == side2 && side2 == side3) {
+            System.out.println("Equilateral Triangle");
+        } else if (side1 == side2 || side2 == side3 || side1 == side3) {
+            System.out.println("Isosceles Triangle");
+        } else {
+            System.out.println("Scalene Triangle");
+        }
+    }
+}
+```
+
+---
+
+## Summary
+
+Conditional statements are fundamental to programming. Here's what we covered:
+
+- **If statement**: Execute code when a condition is true
+- **If-else statement**: Choose between two paths
+- **If-else-if ladder**: Check multiple conditions in sequence
+- **Nested if**: Check conditions within conditions
+- **Switch statement**: Clean way to compare a variable against multiple values
+- **Ternary operator**: Shorthand for simple if-else
+
+### Quick Tips:
+- Use `if-else` for simple conditions
+- Use `if-else-if` for multiple related conditions
+- Use `switch` when comparing one variable against many values
+- Use ternary operator for simple assignments
+- Always use `==` for comparison, not `=`
+- Use `.equals()` for comparing strings
+- Remember to use `break` in switch statements
+
+Keep practicing, and these concepts will become second nature. Happy coding!
+
+---
