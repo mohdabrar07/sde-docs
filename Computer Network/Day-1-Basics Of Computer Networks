@@ -1,0 +1,176 @@
+# 🌐 Computer Network Tutorial
+**Last Updated:** 18 Sep, 2025  
+
+A **Computer Network** is a system where two or more devices are linked together to share **data, resources, and information**.  
+These networks can range from simple setups (like connecting two devices at home) to massive global systems like the **Internet**.
+
+---
+
+## 📘 Uses of Computer Networks
+
+- **Sharing Devices:**  
+  Multiple systems can use shared hardware such as printers and scanners, reducing duplication and costs.
+
+- **Sharing Data:**  
+  Teams can work on shared documents, applications, or systems to boost efficiency.
+
+- **Communication:**  
+  Enables real-time and delayed communication via web, email, video calls, and instant messaging.
+
+- **Data Management:**  
+  Centralized or distributed data storage helps in easy management, security, and backup.
+
+- **Remote Access:**  
+  Users can log into systems, servers, or cloud platforms from different locations, supporting remote work and 24/7 access.
+
+---
+
+## 🧩 Fundamentals of Computer Network
+
+This section introduces the **core concepts** behind computer networking, including its **benefits, characteristics,** and **essential hardware components**.
+
+---
+
+# 🖥️ Basics of Computer Networking
+**Last Updated:** 18 Sep, 2025  
+
+A **Computer Network** is a collection of interconnected devices (computers, servers, printers, etc.) that share **resources and information**.  
+Networks allow efficient data exchange, enabling applications such as **email**, **file sharing**, and **internet browsing**.
+
+---
+
+## 🧠 Basic Terminologies of Computer Networks
+
+| Term | Description |
+|------|--------------|
+| **Network** | A group of connected computers/devices that can communicate and share data. |
+| **Node** | Any device that can send, receive, or forward data (e.g., laptop, mobile, server). |
+| **Networking Devices** | Devices that manage or support networking functions (e.g., router, switch, hub). |
+| **Transmission Media** | The medium through which data travels (wired or wireless). |
+| **Wired Media** | Ethernet cables, optical fiber. |
+| **Wireless Media** | Wi-Fi, Bluetooth, infrared. |
+| **Service Provider Networks** | Networks provided by ISPs or carriers to give access to users or organizations. |
+
+---
+
+## ⚙️ How Does a Computer Network Work?
+
+- **Network Node:** Any device (router, modem, computer) that sends or receives data.  
+- **Link:** The physical or wireless medium connecting nodes.  
+- **Working:**  
+  Networks use **protocols** (rules) to send and receive data.  
+  Each device has a **unique IP Address** for identification.
+
+- **Firewall:**  
+  A security tool (hardware/software) that monitors traffic and allows or blocks data based on rules.
+
+---
+
+## 🏗️ Types of Computer Network Architecture
+
+### 1. Client-Server Architecture
+Nodes are either **servers** or **clients**.  
+Servers manage resources and handle requests from client nodes.
+
+### 2. Peer-to-Peer (P2P) Architecture
+No central server exists.  
+Each device can act as both **client and server**, sharing data directly with others.
+
+---
+
+## 🧰 Network Devices
+
+A network includes various devices that enable data transfer and connectivity.  
+These devices are also known as **networking components**.
+
+### 1. Router
+- Connects multiple networks (e.g., home network ↔ internet).  
+- Directs data packets to their correct destination.
+
+### 2. Switch
+- Connects multiple devices within a LAN (e.g., office computers).  
+- Forwards data only to the target device, improving efficiency.
+
+### 3. Hub
+- Basic device that connects multiple devices.  
+- Broadcasts data to all devices (less efficient than a switch).
+
+### 4. Bridge
+- Connects and filters traffic between two networks or segments.  
+- Reduces unnecessary network traffic.
+
+### 5. Gateway
+- Connects different types of networks.  
+- Translates data between different protocols.
+
+### 6. Access Point (AP)
+- Provides **wireless connectivity**.  
+- Extends a wired network into a Wi-Fi network.
+
+### 7. Modem
+- Converts **digital data ↔ analog signals** for phone/cable lines.  
+- Provides internet access.
+
+### 8. Firewall
+- Monitors and controls **incoming/outgoing traffic**.  
+- Protects against unauthorized access and threats.
+
+---
+
+## 🎯 Goals of Networks
+
+| Goal | Description |
+|------|--------------|
+| **Convenience** | Simplifies computer use for users. |
+| **Efficiency** | Manages hardware resources for better performance. |
+| **Resource Management** | Fair and efficient allocation of CPU, memory, I/O, and storage. |
+| **Security & Protection** | Prevents unauthorized data and resource access. |
+| **Reliability & Fault Tolerance** | Ensures smooth operation and quick recovery from failures. |
+| **Scalability** | Supports growth in users and resources without performance drop. |
+
+---
+
+## 💡 Uses of Computer Networks
+
+- **Communication:** Email, chat, and video conferencing.  
+- **Resource Sharing:** Share printers, scanners, and files to save cost and effort.  
+- **Remote Access:** Access data/systems from anywhere.  
+- **Collaboration:** Work together on projects, share ideas, review work.  
+- **E-Commerce:** Enables online shopping and secure transactions.  
+- **Education:** Supports online learning and research.
+
+---
+
+## ⚖️ Characteristics of Computer Networks
+
+### 1. 🔒 Security
+- Protects data from unauthorized access, hacking, and viruses.  
+- Uses **firewalls**, **encryption**, and **authentication**.
+
+### 2. ⚙️ Reliability
+- Ensures data and resources are always available.  
+- **Redundancy** and **backups** maintain uptime.
+
+### 3. 📈 Scalability
+- Handles more devices/users without losing performance.  
+- Example: The **Internet** supports millions of new users daily.
+
+### 4. ⚡ High Performance
+- Ensures fast data transfer, low latency, and high throughput.  
+- Depends on **bandwidth**, **response time**, and **processing power**.
+
+### 5. 🛰️ Quality of Service (QoS)
+- Prioritizes important data for faster delivery.  
+- Ensures smooth streaming and real-time communication.
+
+---
+
+## 🧾 Summary
+
+A **computer network** connects devices to share data, resources, and services efficiently.  
+It enables **communication, collaboration, and remote access** while maintaining **security, reliability, and scalability**.
+
+---
+
+**Source:** geeksforgeeks.org  
+
