@@ -5,8 +5,6 @@
 A **Computer Network** is a system where two or more devices are linked together to share **data, resources, and information**.  
 These networks can range from simple setups (like connecting two devices at home) to massive global systems like the **Internet**.
 
----
-
 ## 📘 Uses of Computer Networks
 
 - **Sharing Devices:**  
@@ -24,13 +22,9 @@ These networks can range from simple setups (like connecting two devices at home
 - **Remote Access:**  
   Users can log into systems, servers, or cloud platforms from different locations, supporting remote work and 24/7 access.
 
----
-
 ## 🧩 Fundamentals of Computer Network
 
 This section introduces the **core concepts** behind computer networking, including its **benefits, characteristics,** and **essential hardware components**.
-
----
 
 # 🖥️ Basics of Computer Networking
 
@@ -38,8 +32,6 @@ This section introduces the **core concepts** behind computer networking, includ
 
 A **Computer Network** is a collection of interconnected devices (computers, servers, printers, etc.) that share **resources and information**.  
 Networks allow efficient data exchange, enabling applications such as **email**, **file sharing**, and **internet browsing**.
-
----
 
 ## 🧠 Basic Terminologies of Computer Networks
 
@@ -53,8 +45,6 @@ Networks allow efficient data exchange, enabling applications such as **email**,
 | **Wireless Media** | Wi-Fi, Bluetooth, infrared. |
 | **Service Provider Networks** | Networks provided by ISPs or carriers to give access to users or organizations. |
 
----
-
 ## ⚙️ How Does a Computer Network Work?
 
 - **Network Node:** Any device (router, modem, computer) that sends or receives data.  
@@ -65,8 +55,6 @@ Networks allow efficient data exchange, enabling applications such as **email**,
 
 - **Firewall:**  
   A security tool (hardware/software) that monitors traffic and allows or blocks data based on rules.
-
----
 
 ## 🏗️ Types of Computer Network Architecture
 
@@ -79,8 +67,6 @@ Servers manage resources and handle requests from client nodes.
 
 No central server exists.  
 Each device can act as both **client and server**, sharing data directly with others.
-
----
 
 ## 🧰 Network Devices
 
@@ -127,8 +113,6 @@ These devices are also known as **networking components**.
 - Monitors and controls **incoming/outgoing traffic**.  
 - Protects against unauthorized access and threats.
 
----
-
 ## 🎯 Goals of Networks
 
 | Goal | Description |
@@ -140,8 +124,6 @@ These devices are also known as **networking components**.
 | **Reliability & Fault Tolerance** | Ensures smooth operation and quick recovery from failures. |
 | **Scalability** | Supports growth in users and resources without performance drop. |
 
----
-
 ## 💡 Uses of Computer Networks
 
 - **Communication:** Email, chat, and video conferencing.  
@@ -150,8 +132,6 @@ These devices are also known as **networking components**.
 - **Collaboration:** Work together on projects, share ideas, review work.  
 - **E-Commerce:** Enables online shopping and secure transactions.  
 - **Education:** Supports online learning and research.
-
----
 
 ## ⚖️ Characteristics of Computer Networks
 
@@ -179,8 +159,6 @@ These devices are also known as **networking components**.
 
 - Prioritizes important data for faster delivery.  
 - Ensures smooth streaming and real-time communication.
-
----
 
 ## 🧾 Summary
 
