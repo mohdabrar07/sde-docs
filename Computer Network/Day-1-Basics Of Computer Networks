@@ -1,4 +1,5 @@
 # 🌐 Computer Network Tutorial
+
 **Last Updated:** 18 Sep, 2025  
 
 A **Computer Network** is a system where two or more devices are linked together to share **data, resources, and information**.  
@@ -32,6 +33,7 @@ This section introduces the **core concepts** behind computer networking, includ
 ---
 
 # 🖥️ Basics of Computer Networking
+
 **Last Updated:** 18 Sep, 2025  
 
 A **Computer Network** is a collection of interconnected devices (computers, servers, printers, etc.) that share **resources and information**.  
@@ -42,7 +44,7 @@ Networks allow efficient data exchange, enabling applications such as **email**,
 ## 🧠 Basic Terminologies of Computer Networks
 
 | Term | Description |
-|------|--------------|
+|------|-------------|
 | **Network** | A group of connected computers/devices that can communicate and share data. |
 | **Node** | Any device that can send, receive, or forward data (e.g., laptop, mobile, server). |
 | **Networking Devices** | Devices that manage or support networking functions (e.g., router, switch, hub). |
@@ -69,10 +71,12 @@ Networks allow efficient data exchange, enabling applications such as **email**,
 ## 🏗️ Types of Computer Network Architecture
 
 ### 1. Client-Server Architecture
+
 Nodes are either **servers** or **clients**.  
 Servers manage resources and handle requests from client nodes.
 
 ### 2. Peer-to-Peer (P2P) Architecture
+
 No central server exists.  
 Each device can act as both **client and server**, sharing data directly with others.
 
@@ -84,34 +88,42 @@ A network includes various devices that enable data transfer and connectivity.
 These devices are also known as **networking components**.
 
 ### 1. Router
+
 - Connects multiple networks (e.g., home network ↔ internet).  
 - Directs data packets to their correct destination.
 
 ### 2. Switch
+
 - Connects multiple devices within a LAN (e.g., office computers).  
 - Forwards data only to the target device, improving efficiency.
 
 ### 3. Hub
+
 - Basic device that connects multiple devices.  
 - Broadcasts data to all devices (less efficient than a switch).
 
 ### 4. Bridge
+
 - Connects and filters traffic between two networks or segments.  
 - Reduces unnecessary network traffic.
 
 ### 5. Gateway
+
 - Connects different types of networks.  
 - Translates data between different protocols.
 
 ### 6. Access Point (AP)
+
 - Provides **wireless connectivity**.  
 - Extends a wired network into a Wi-Fi network.
 
 ### 7. Modem
+
 - Converts **digital data ↔ analog signals** for phone/cable lines.  
 - Provides internet access.
 
 ### 8. Firewall
+
 - Monitors and controls **incoming/outgoing traffic**.  
 - Protects against unauthorized access and threats.
 
@@ -120,7 +132,7 @@ These devices are also known as **networking components**.
 ## 🎯 Goals of Networks
 
 | Goal | Description |
-|------|--------------|
+|------|-------------|
 | **Convenience** | Simplifies computer use for users. |
 | **Efficiency** | Manages hardware resources for better performance. |
 | **Resource Management** | Fair and efficient allocation of CPU, memory, I/O, and storage. |
@@ -144,22 +156,27 @@ These devices are also known as **networking components**.
 ## ⚖️ Characteristics of Computer Networks
 
 ### 1. 🔒 Security
+
 - Protects data from unauthorized access, hacking, and viruses.  
 - Uses **firewalls**, **encryption**, and **authentication**.
 
 ### 2. ⚙️ Reliability
+
 - Ensures data and resources are always available.  
 - **Redundancy** and **backups** maintain uptime.
 
 ### 3. 📈 Scalability
+
 - Handles more devices/users without losing performance.  
 - Example: The **Internet** supports millions of new users daily.
 
 ### 4. ⚡ High Performance
+
 - Ensures fast data transfer, low latency, and high throughput.  
 - Depends on **bandwidth**, **response time**, and **processing power**.
 
 ### 5. 🛰️ Quality of Service (QoS)
+
 - Prioritizes important data for faster delivery.  
 - Ensures smooth streaming and real-time communication.
 
@@ -172,5 +189,4 @@ It enables **communication, collaboration, and remote access** while maintaining
 
 ---
 
-**Source:** geeksforgeeks.org  
-
+**Source:** geeksforgeeks.org
